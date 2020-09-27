@@ -1,6 +1,6 @@
 import zipfile
 
-char_list='abcdefghijklmnopqrstuvwxyz'
+char_list='abcdefghijklmnopqrstuvwxyz' # add all the possible characters in the char_list
 complete=[]
 
 for current in range(4):
