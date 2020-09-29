@@ -12,7 +12,7 @@ class GpuFunction:
                     a=[y+i for i in k for y in a]
                complete=np.append(complete,a)
 
-     @jit(nopython=True,target='gpu')
+     @jit(nopython=True, parallel=True)
      def func2(self):
           k='abcdefghijklmnopqrstuvwxyz' # add all the possible characters in the char_list
           complete=np.array([])
